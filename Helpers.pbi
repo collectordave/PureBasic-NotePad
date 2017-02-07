@@ -11,7 +11,7 @@
 ;   Operating system: Windows  [X]GUI
 ;   Compiler version: PureBasic 5.6B2 (x64)
 ;          Copyright: (C)2017
-;            License: GNUGPL
+;            License: Credit Only
 ;          Libraries: 
 ;      English Forum: 
 ;       French Forum: 
@@ -40,6 +40,7 @@ Procedure mnuPrint(eventid)
       PageHeight = CDPrint::Printer\Height - (CDPrint::Printer\TopPrinterMargin * 2) ;Useable Height
       PageWidth = CDPrint::Printer\Width - (CDPrint::Printer\LeftPrinterMargin * 2) ;Useable Width
       
+      ;Use The Orientation Chosen By User
       If PageHeight > PageWidth
         Orientation = CDPrint::#Portrait
       Else
@@ -48,22 +49,24 @@ Procedure mnuPrint(eventid)
       
       ;Add First Page
       CDPrint::AddPage(Orientation)     
-      Currentx = 0 
+      Currentx = 1 Just space away from left margin 
       Currenty = 0
       
       While Eof(hFile) = 0  
         PrintText = ReadString(hFile) 
         
         ;All Print Procedures are in mm so check height
-        TextSize = 14 * 0.352777778            ;Convert Font Points To mm
-        CountLines = CountLines + 1
-        CDPrint::PrintText(Currentx,Currenty,"Arial",14,PrintText)
-        If (Currenty + TextSize + 1) => PageHeight
+        TextSize = 14 * 0.352777778            ;Convert Font Points To mm      
+        If (Currenty + (TextSize + 1) * 2) => PageHeight
           CDPrint::AddPage(Orientation)
-          Currenty = 0 ;CDPrint::Printer\TopPrinterMargin
+          Currenty = 0
         Else
           Currenty = Currenty + TextSize + 1
-        EndIf
+        EndIf        
+
+        CountLines = CountLines + 1
+        CDPrint::PrintText(Currentx,Currenty,"Arial",14,PrintText)
+
       Wend
       CloseFile(hFile)  
       CDPrint::Finished()
@@ -134,6 +137,6 @@ Procedure mnuAbout(eventid)
   MessageRequester("PBNotepad", "Simple start to a basic text editor")
 EndProcedure
 ; IDE Options = PureBasic 5.60 Beta 1 (Windows - x64)
-; CursorPosition = 22
+; CursorPosition = 13
 ; Folding = --
 ; EnableXP

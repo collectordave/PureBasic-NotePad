@@ -11,7 +11,7 @@
 ;   Operating system: Windows  [X]GUI
 ;   Compiler version: PureBasic 5.6B2 (x64)
 ;          Copyright: (C)2017
-;            License: GNUGPL
+;            License: Credit Only
 ;          Libraries: 
 ;      English Forum: 
 ;       French Forum: 
@@ -35,5 +35,6 @@ Repeat         ;main message loop
 Until event = #PB_Event_CloseWindow
 End
 ; IDE Options = PureBasic 5.60 Beta 1 (Windows - x64)
+; CursorPosition = 13
 ; Folding = -
 ; EnableXP

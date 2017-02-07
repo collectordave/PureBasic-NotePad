@@ -11,7 +11,7 @@
 ;   Operating system: Windows  [X]GUI
 ;   Compiler version: PureBasic 5.6B2 (x64)
 ;          Copyright: (C)2017
-;            License: GNUGPL
+;            License: Credit Only
 ;          Libraries: 
 ;      English Forum: 
 ;       French Forum: 
@@ -106,6 +106,6 @@ Procedure Dlg1_Events(event)
   ProcedureReturn #True
 EndProcedure
 ; IDE Options = PureBasic 5.60 Beta 1 (Windows - x64)
-; CursorPosition = 23
+; CursorPosition = 13
 ; Folding = -
 ; EnableXP

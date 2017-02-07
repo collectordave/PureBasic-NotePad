@@ -7,24 +7,24 @@
   <section name="data">
     <explorer view="..\..\Program Files (x86)\PureBasic\Examples\" pattern="0"/>
     <log show="1"/>
-    <lastopen date="2017-02-05 16:40" user="DaveSandy" host="MEDIAPC"/>
+    <lastopen date="2017-02-07 08:46" user="DaveSandy" host="MEDIAPC"/>
   </section>
   <section name="files">
     <file name="CDPrint.pbi">
       <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
-      <fingerprint md5="acb977869877284dc2726671b636f82c"/>
+      <fingerprint md5="c40e890435dae53d8294193fefc6a2a8"/>
     </file>
     <file name="Helpers.pbi">
       <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
-      <fingerprint md5="60e90b298d54c04d64cd2ba6f61cfe77"/>
+      <fingerprint md5="8b4f1d8746b7a58cedbe2c0b472a5b1d"/>
     </file>
     <file name="pbnotepad.pb">
       <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
-      <fingerprint md5="dda11e23217af793b5feb60ddb343f73"/>
+      <fingerprint md5="2c5fb4f52b4bbb44968af8785bb3d769"/>
     </file>
     <file name="pbnotepad.pbi">
       <config load="0" scan="1" panel="1" warn="1" lastopen="1" panelstate="+"/>
-      <fingerprint md5="3c07c05fb46d5bdd32632a7c01fba40e"/>
+      <fingerprint md5="a7bd07c1650c7a6c72510dc42d3a1e32"/>
     </file>
   </section>
   <section name="targets">
